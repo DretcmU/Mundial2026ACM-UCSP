@@ -1,6 +1,9 @@
 # Mundial2026ACM-UCSP
 predictor del mundial 2026
 
+# DATASET DE JUGADORES DE CADA EQUIPO DE LOS 48 PAISES
+
+https://abobabo91.github.io/wc2026-profiles/all-players.html
 
 Datos Básicos del Jugador
 
