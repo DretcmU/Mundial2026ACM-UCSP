@@ -19,13 +19,13 @@ Datos Básicos del Jugador
 
 Valores y Rendimiento Técnico
 
-    MarketValue (Market Value): Valor de Mercado actual del jugador en euros/dólares.
+    MarketValue: Valor de Mercado actual del jugador en euros/dólares.
 
     CAPS: Partidos internacionales oficiales jugados con su selección mayor.
 
     FORM: Estado de forma reciente del jugador (suele medirse calculando el promedio de calificación de sus últimos 5 partidos).
 
-    QUAL (Quality / Ability): Calidad o habilidad actual general del futbolista (generalmente en una escala de 1 a 100 o de 1 a 5 estrellas).
+    QUAL (Quality / Ability): Calidad o habilidad actual general del futbolista (generalmente en una escala de 1 a 100).
 
 Atributos de Carrera y Nivel
 
@@ -35,4 +35,16 @@ Atributos de Carrera y Nivel
 
     PLAY: Minutos jugados o porcentaje de participación como titular en la temporada actual.
 
-    AVERAGE: Promedio de FORM	QUAL	EXP	LEV	PLAY.
+    AVERAGE: Promedio de FORM	QUAL	EXP	LEV	PLAY, que se ve como OVERALL y se hace el promedio segun los pesos y luego una normalización.
+    
+     OVERALL_WEIGHTS: dict[str, float] = {
+            "form": 1.0,
+        
+            "playing_time": 1.0,
+        
+            "experience": 1.0,
+        
+            "level": 1.0,
+        
+            "quality": 3.0,
+        } 
